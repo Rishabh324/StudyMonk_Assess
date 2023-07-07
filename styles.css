@@ -18,7 +18,7 @@
 
   .login-container, .reg-container{
     padding: 10px;
-    height: 97.3vh;
+    height: 100vh;
     display: flex;
     background-color:#F1C93B;
     align-items: center;
