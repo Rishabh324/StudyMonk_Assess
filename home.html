@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Recruitment Solution</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <style>
+        /* Styles for search form */
+        #search-form {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        #search-form input[type="text"], #search-form select {
+            margin-right: 10px;
+          }
+        
+          #job-role-select, #search-button{
+            height: 40px;
+          }
+
+        #location-input{
+          padding: 10px;
+          width: 50%;
+        }
+        
+        /* Styles for candidate list */
+        #candidate-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .candidate-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .main{
+          display: flex;
+          font-family: 'Nunito', sans-serif;
+          background-color: #F1C93B;
+        }
+
+        .candidate-search{
+          flex: 1;
+        }
+
+        #candidate-list{
+          color: black;
+        }
+
+        .navbar-toggler{
+          padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+  <div class="header">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <h1>Online Recruitment Solution</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <p>Candidate Search <span class="navbar-toggler-icon"></span></p>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Candidate Search</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div id="search-form">
+              <input type="text" id="location-input" placeholder="New York, Chicago, etc..">
+              <select id="job-role-select">
+                  <option value="">All Job Roles</option>
+                  <option value="developer">Developer</option>
+                  <option value="designer">Designer</option>
+                  <option value="manager">Manager</option>
+              </select>
+              <button id="search-button">Search</button>
+            </div>
+    
+        <h2>Matching Candidates</h2>
+    
+        <ul id="candidate-list"></ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="main">
+      <div class="container">
+        <h1>Efficient Recruitment Made Easy</h1>
+        <p>Our online recruitment solution streamlines the hiring process, empowering HR professionals and hiring managers to find the best talent quickly and effectively.</p>
+        
+        <div class="feature-list">
+          <div class="feature-item">
+            <span class="feature-icon">&#128202;</span>
+            <h2>Automated Resume Screening</h2>
+            <p>Save time by automatically filtering and shortlisting resumes based on predefined criteria, allowing you to focus on the most qualified candidates.</p>
+          </div>
+          
+          <div class="feature-item">
+            <span class="feature-icon">&#128196;</span>
+            <h2>Integrated Applicant Tracking</h2>
+            <p>Track applicants throughout the hiring process, from initial application to final selection, all within a single platform for enhanced collaboration.</p>
+          </div>
+          
+          <div class="feature-item">
+            <span class="feature-icon">&#128275;</span>
+            <h2>Effortless Job Posting</h2>
+            <p>Easily create and manage job postings across multiple platforms, reaching a wider pool of candidates and increasing your chances of finding the perfect fit.</p>
+          </div>
+          
+          <div class="feature-item">
+            <span class="feature-icon">&#128226;</span>
+            <h2>Real-time Analytics</h2>
+            <p>Access comprehensive analytics and reports to gain valuable insights into your hiring process, enabling data-driven decisions for continuous improvement.</p>
+          </div>
+        </div>
+        
+        <p>Ready to revolutionize your recruitment process?</p>
+        <a class="cta-button" href="#contact">Contact Us</a>
+      </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
